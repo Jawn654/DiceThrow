@@ -5,10 +5,11 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 
-private  val dieVieModel : DieViewModel by lazy {
-    ViewModelProvider(this)[DieViewModel::class.java]
-}
+
 class MainActivity : AppCompatActivity() {
+    private  val dieVieModel : DieViewModel by lazy {
+        ViewModelProvider(this)[DieViewModel::class.java]
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
